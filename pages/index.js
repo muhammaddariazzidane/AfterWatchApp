@@ -6,8 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "../components/Login";
 import Category from "../components/Category";
 import requests from "../src/Req";
-
-// import styles from '../styles/Home.module.css'
+import Intro from "./../components/Intro";
 
 export default function Home() {
   return (
@@ -19,6 +18,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
+      <Intro />
       <Category ID="1" title="UpComing" fetchURL={requests.requestUpcoming} />
       <Category ID="2" title="Trending" fetchURL={requests.requestTrending} />
       <Category ID="3" title="Top Rated" fetchURL={requests.requestTopRated} />

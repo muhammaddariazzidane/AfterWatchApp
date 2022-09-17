@@ -17,7 +17,7 @@ const Main = () => {
   // console.log(movie);
 
   return (
-    <div className="w-full h-[600px] ">
+    <div className="w-full h-[600px] mb-20">
       <div className="w-full h-full">
         <div className="w-full absolute h-[600px] bg-gradient-to-b from-black via-transparent to-black  "></div>
         <img className="object-cover opacity-40 w-full h-full" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt="/#" />
